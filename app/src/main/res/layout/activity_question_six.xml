@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".questions.QuestionOne">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/table_two"
+        android:fontFamily="@font/remarregular"
+        android:gravity="center"
+        android:padding="10dp"
+
+        android:text="Лучшая песня первого сезона\n Hazbin Hotel"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <View
+        android:id="@+id/hell_dad"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@id/imageView">
+
+    </View>
+
+    <View
+        android:id="@+id/hell_id_forever"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@id/imageView">
+
+    </View>
+
+    <View
+        android:id="@+id/didt_now"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView">
+
+    </View>
+
+    <View
+        android:id="@+id/respectless"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView">
+
+    </View>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/collage"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question">
+
+    </ImageView>
+
+    <TextView
+        android:text="   ^\nтык"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView">
+
+    </TextView>
+
+    <LinearLayout
+
+        android:id="@+id/linear_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linear_two"
+        app:layout_constraintHorizontal_bias="0.5">
+
+        <Button
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:id="@+id/btn_one"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_normal"
+
+            android:fontFamily="@font/remarregular"
+            android:text="Hell's Greatest Dad"
+            android:textSize="21dp">
+
+        </Button>
+
+        <Button
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:id="@+id/btn_two"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_normal"
+            android:fontFamily="@font/remarregular"
+            android:text="Hell is Forever"
+            android:textSize="25dp">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linear_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/back"
+        android:gravity="center"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:id="@+id/btn_three"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_normal"
+
+            android:fontFamily="@font/remarregular"
+            android:text="You Didn't Know"
+            android:textSize="24dp">
+
+        </Button>
+
+        <Button
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:id="@+id/btn_four"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_normal"
+
+            android:fontFamily="@font/remarregular"
+            android:text="Respectless"
+            android:textSize="25dp">
+
+        </Button>
+
+    </LinearLayout>
+
+    <TextView
+        android:padding="10dp"
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/remarregular"
+        android:text="@string/Back"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:padding="10dp"
+        android:id="@+id/Continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/remarregular"
+        android:text="@string/Continue"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

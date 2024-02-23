@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon"
+    tools:context=".StartGameActivity"
+    android:id="@+id/layout">
+    <View
+        android:id="@+id/drawVolume"
+        android:background="@drawable/volume"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+
+    </View>
+    <SeekBar
+        android:id="@+id/volume"
+        app:layout_constraintStart_toEndOf="@id/drawVolume"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="370dp"
+        android:layout_height="40dp">
+
+    </SeekBar>
+
+
+    <TextView
+        android:padding="20dp"
+        android:fontFamily="@font/remarregular"
+        android:id="@+id/story"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/table"
+        android:text="   Вы возвращаетесь домой после тяжелого утиного дня. Разве что-то может случиться поздно ночью в холодный зимний день?"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/start_game"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintVertical_bias="0.5"
+        tools:layout_editor_absoluteX="0dp">
+
+    </TextView>
+
+    <Button
+        android:background="@drawable/button_style"
+        android:textSize="25dp"
+        android:fontFamily="@font/remarregular"
+        android:id="@+id/start_game"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="@string/start_game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/history_score"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
+        >
+
+    </Button>
+    <Button
+        android:background="@drawable/button_style"
+        android:textSize="25dp"
+        android:fontFamily="@font/remarregular"
+        android:id="@+id/history_score"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="История прохождений"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="20dp"
+        android:textColor="@color/white">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
